@@ -1,0 +1,7 @@
+Transcript of audio sample:
+
+This is a short audio clip used to demonstrate accessible multimedia
+embedding on a web page. It shows how developers can provide a
+text-based transcript as an alternative to audio content, supporting
+users who are Deaf, hard of hearing, or unable to play sound in their
+current environment.

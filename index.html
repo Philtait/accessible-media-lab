@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Media Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main>
+    <article>
+      <header>
+        <h1>Digital Multimedia Demonstration</h1>
+        <p>An accessible page with image, audio, and video.</p>
+      </header>
+
+      <figure>
+        <img src="assets/waveform.png" alt="Plot of a sampled audio waveform" width="600">
+        <figcaption>A discrete-time waveform after sampling.</figcaption>
+      </figure>
+
+      <section aria-labelledby="audio-demo-title">
+        <h2 id="audio-demo-title">Listen to the example</h2>
+        <audio controls>
+          <source src="assets/sample.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <p><a href="assets/transcript.txt">Read the transcript</a></p>
+      </section>
+
+      <section aria-labelledby="video-demo-title">
+        <h2 id="video-demo-title">Watch the lecture</h2>
+        <video controls width="720" poster="assets/lecture-poster.jpeg">
+          <source src="assets/lecture.mp4" type="video/mp4">
+          <track kind="captions" src="captions/lecture-en.vtt" srclang="en" label="English captions" default>
+          Your browser does not support embedded video.
+        </video>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
